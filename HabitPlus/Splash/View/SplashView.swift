@@ -7,9 +7,21 @@
 
 import SwiftUI
 
-struct SplashView: View{
-    var body: some View{
-        Text("Olá")
+struct SplashView: View {
+    ///inicializando a tela com loading
+    @State var state: SplashUISate = .loading
+    
+    var body: some View {
+        switch state {
+        case .loading:
+            Text("Loading")
+        case .goToSingInScrenn:
+            Text("Carregar tela de login")
+        case .goToHomeScrenn:
+            Text("Carregar homescreen")
+        case .error(let msg):
+            Text("Carregar mensagem de erro: \(msg)")
+        }
     }
 }
 
