@@ -12,6 +12,7 @@
 		1BA8E9EF2B32762C0060646A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8E9EE2B32762C0060646A /* Preview Assets.xcassets */; };
 		1BA8E9F92B3277790060646A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8E9F82B3277790060646A /* SplashView.swift */; };
 		1BA8E9FB2B3278F90060646A /* SplashUISate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8E9FA2B3278F90060646A /* SplashUISate.swift */; };
+		1BB0CF422B33B71700AAD07B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0CF412B33B71700AAD07B /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		1BA8E9EE2B32762C0060646A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BA8E9F82B3277790060646A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		1BA8E9FA2B3278F90060646A /* SplashUISate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUISate.swift; sourceTree = "<group>"; };
+		1BB0CF412B33B71700AAD07B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		1BA8E9F52B3276E30060646A /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				1BB0CF402B33B6D800AAD07B /* ViewModel */,
 				1BA8E9F72B3277010060646A /* Model */,
 				1BA8E9F62B3276F90060646A /* View */,
 			);
@@ -92,6 +95,14 @@
 				1BA8E9FA2B3278F90060646A /* SplashUISate.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1BB0CF402B33B6D800AAD07B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0CF412B33B71700AAD07B /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				1BA8E9FB2B3278F90060646A /* SplashUISate.swift in Sources */,
 				1BA8E9E82B3276290060646A /* HabitPlusApp.swift in Sources */,
 				1BA8E9F92B3277790060646A /* SplashView.swift in Sources */,
+				1BB0CF422B33B71700AAD07B /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
