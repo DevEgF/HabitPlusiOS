@@ -17,36 +17,42 @@ struct SingInView: View {
     @State var navigationHiden = true
     
     var body: some View {
-        NavigationView {
-            
-            ScrollView(showsIndicators: false){
-                
-                VStack(alignment: .center, spacing: 20) {
+        ZStack {
+            if case SignInUIState.goToHomeScreen = viewModel.uiState {
+                Text("tela principal")
+            } else {
+                NavigationView {
                     
-                    Spacer(minLength: 80)
-                    
-                    VStack(alignment: .center, spacing: 8) {
-                        Image("logo")
-                            .resizable()
-                            .scaledToFit()
-                            .padding(.horizontal, 48)
+                    ScrollView(showsIndicators: false){
                         
-                        Text("Login")
-                            .foregroundColor(.orange)
-                            .font(Font.system(.title).bold())
-                            .padding(.bottom, 8)
-                        
-                        numberField
-                        passwordField
-                        enterButton
-                        registerLink
-                    }
+                        VStack(alignment: .center, spacing: 20) {
+                            
+                            Spacer(minLength: 80)
+                            
+                            VStack(alignment: .center, spacing: 8) {
+                                Image("logo")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .padding(.horizontal, 48)
+                                
+                                Text("Login")
+                                    .foregroundColor(.orange)
+                                    .font(Font.system(.title).bold())
+                                    .padding(.bottom, 8)
+                                
+                                numberField
+                                passwordField
+                                enterButton
+                                registerLink
+                            }
+                        }
+                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .padding(.horizontal, 32)
+                        .background(Color.white)
+                        .navigationBarTitle("Login", displayMode: .inline)
+                        .navigationBarHidden(navigationHiden)
                 }
-            }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                .padding(.horizontal, 32)
-                .background(Color.white)
-                .navigationBarTitle("Login", displayMode: .inline)
-                .navigationBarHidden(navigationHiden)
+            }
         }
     }
 }
@@ -68,7 +74,7 @@ extension SingInView {
 extension SingInView {
     var enterButton: some View {
         Button("Entrar") {
-            //
+            viewModel.login(email: email, password: password)
         }
     }
 }
