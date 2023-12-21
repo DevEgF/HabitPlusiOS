@@ -13,6 +13,9 @@
 		1BA8E9F92B3277790060646A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8E9F82B3277790060646A /* SplashView.swift */; };
 		1BA8E9FB2B3278F90060646A /* SplashUISate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8E9FA2B3278F90060646A /* SplashUISate.swift */; };
 		1BB0CF422B33B71700AAD07B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0CF412B33B71700AAD07B /* SplashViewModel.swift */; };
+		1BB0CF482B34E21600AAD07B /* SingInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0CF472B34E21600AAD07B /* SingInView.swift */; };
+		1BB0CF4A2B34E26100AAD07B /* SingInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0CF492B34E26100AAD07B /* SingInViewModel.swift */; };
+		1BB0CF4C2B34EA7600AAD07B /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0CF4B2B34EA7600AAD07B /* SplashViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		1BA8E9F82B3277790060646A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		1BA8E9FA2B3278F90060646A /* SplashUISate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUISate.swift; sourceTree = "<group>"; };
 		1BB0CF412B33B71700AAD07B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		1BB0CF472B34E21600AAD07B /* SingInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInView.swift; sourceTree = "<group>"; };
+		1BB0CF492B34E26100AAD07B /* SingInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInViewModel.swift; sourceTree = "<group>"; };
+		1BB0CF4B2B34EA7600AAD07B /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 		1BA8E9E62B3276290060646A /* HabitPlus */ = {
 			isa = PBXGroup;
 			children = (
+				1BB0CF432B34E1C400AAD07B /* SingIn */,
 				1BA8E9F52B3276E30060646A /* Splash */,
 				1BA8E9E72B3276290060646A /* HabitPlusApp.swift */,
 				1BA8E9EB2B32762C0060646A /* Assets.xcassets */,
@@ -101,8 +108,42 @@
 			isa = PBXGroup;
 			children = (
 				1BB0CF412B33B71700AAD07B /* SplashViewModel.swift */,
+				1BB0CF4B2B34EA7600AAD07B /* SplashViewRouter.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1BB0CF432B34E1C400AAD07B /* SingIn */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0CF462B34E1E200AAD07B /* Model */,
+				1BB0CF452B34E1D500AAD07B /* ViewModel */,
+				1BB0CF442B34E1D000AAD07B /* View */,
+			);
+			path = SingIn;
+			sourceTree = "<group>";
+		};
+		1BB0CF442B34E1D000AAD07B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0CF472B34E21600AAD07B /* SingInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BB0CF452B34E1D500AAD07B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0CF492B34E26100AAD07B /* SingInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1BB0CF462B34E1E200AAD07B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +219,9 @@
 				1BA8E9FB2B3278F90060646A /* SplashUISate.swift in Sources */,
 				1BA8E9E82B3276290060646A /* HabitPlusApp.swift in Sources */,
 				1BA8E9F92B3277790060646A /* SplashView.swift in Sources */,
+				1BB0CF482B34E21600AAD07B /* SingInView.swift in Sources */,
+				1BB0CF4A2B34E26100AAD07B /* SingInViewModel.swift in Sources */,
+				1BB0CF4C2B34EA7600AAD07B /* SplashViewRouter.swift in Sources */,
 				1BB0CF422B33B71700AAD07B /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
